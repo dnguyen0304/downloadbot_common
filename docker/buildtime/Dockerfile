@@ -5,10 +5,10 @@ FROM ${DOMAIN}/${NAMESPACE}-buildtime-base:${BASE_IMAGE_VERSION}
 
 MAINTAINER Duy Nguyen <dnguyen0304@gmail.com>
 
-ARG NAMESPACE
+ARG PACKAGE_NAME
 
 ARG BUILD_EXECUTABLE="build.sh"
 
 COPY docker/buildtime/${BUILD_EXECUTABLE} .
-COPY ${NAMESPACE} ./${NAMESPACE}
+COPY ${PACKAGE_NAME} ./${PACKAGE_NAME}
 COPY requirements.txt .

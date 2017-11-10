@@ -2,10 +2,9 @@
 
 set -eu
 
-NAMESPACE=$1
-PACKAGE_NAME=$2
-SHARED_VOLUME=$3
-VERSION=$4
+PACKAGE_NAME=$1
+SHARED_VOLUME=$2
+VERSION=$3
 
 # Set the build root to the working directory. Now relative references
 # may be used.
@@ -15,7 +14,7 @@ PACKAGE="${PACKAGE_NAME}-${VERSION}"
 mkdir ${PACKAGE}
 
 # Include the source code.
-cp -r ${NAMESPACE} ${PACKAGE}
+cp -r ${PACKAGE_NAME} ${PACKAGE}
 
 # Include the dependencies.
 if [ -s requirements.txt ]; then

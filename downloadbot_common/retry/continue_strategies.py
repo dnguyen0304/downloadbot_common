@@ -13,7 +13,7 @@ class ContinueStrategy(object):
         """
         Parameters
         ----------
-        attempt : downloadbot.common.retry.attempt.Attempt
+        attempt : downloadbot_common.retry.attempt.Attempt
 
         Returns
         -------

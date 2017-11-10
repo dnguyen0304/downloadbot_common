@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from downloadbot.common import lookup
+from downloadbot_common import lookup
 
 
 class Find(object):
@@ -59,7 +59,7 @@ class Find(object):
 
         Raises
         ------
-        downloadbot.common.lookup.exceptions.NoResultFound
+        downloadbot_common.lookup.exceptions.NoResultFound
             If the target could not be found.
         """
 

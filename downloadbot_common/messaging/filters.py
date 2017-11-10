@@ -13,11 +13,11 @@ class Message(metaclass=abc.ABCMeta):
 
         Parameters
         ----------
-        message : downloadbot.common.messaging.messages.Message
+        message : downloadbot_common.messaging.messages.Message
 
         Returns
         -------
-        downloadbot.common.messaging.messages.Message
+        downloadbot_common.messaging.messages.Message
             If the input should not be filtered. Otherwise None.
         """
 
@@ -33,7 +33,7 @@ class Logging(Message):
 
         Parameters
         ----------
-        message_filter : downloadbot.common.messaging.filters.Message
+        message_filter : downloadbot_common.messaging.filters.Message
         logger : logging.Logger
         """
 

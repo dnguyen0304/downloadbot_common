@@ -3,8 +3,8 @@
 import mock
 
 from .. import consumers
-from downloadbot.common import messaging
-from downloadbot.common.messaging import consuming
+from downloadbot_common import messaging
+from downloadbot_common.messaging import consuming
 
 
 class MockReceiver(consuming.receivers.Receiver):

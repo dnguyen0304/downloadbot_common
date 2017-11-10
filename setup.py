@@ -4,7 +4,7 @@
 import setuptools
 
 if __name__ == '__main__':
-    package_name = 'downloadbot.common'
+    package_name = 'downloadbot_common'
 
     description = 'Common libraries for Pokemon Showdown web scrapers.'
 
@@ -16,15 +16,13 @@ if __name__ == '__main__':
     setuptools.setup(name=package_name,
                      version='0.1.0',
                      description=description,
-                     url='https://github.com/dnguyen0304/downloadbot.common.git',
+                     url='https://github.com/dnguyen0304/downloadbot_common.git',
                      author='Duy Nguyen',
                      author_email='dnguyen0304@gmail.com',
                      license='MIT',
                      classifiers=['Programming Language :: Python :: 3.5',
                                   'Programming Language :: Python :: 3.6'],
-                     packages=setuptools.find_packages(
-                         include=['downloadbot', 'downloadbot.common*'],
-                         exclude=['*.tests']),
+                     packages=setuptools.find_packages(exclude=['*.tests']),
                      install_requires=install_requires,
                      test_suite='nose.collector',
                      tests_require=['mock', 'nose'],

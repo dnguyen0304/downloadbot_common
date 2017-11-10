@@ -4,7 +4,7 @@ import abc
 import time
 
 from . import exceptions
-from downloadbot.common import io
+from downloadbot_common import io
 
 
 class Consumer(metaclass=abc.ABCMeta):
@@ -36,9 +36,9 @@ class Simple(Disposable):
         """
         Parameters
         ----------
-        receiver : downloadbot.common.messaging.consuming.receivers.Disposable
-        handler : downloadbot.common.messaging.consuming.handlers.Handler
-        filters : typing.Iterable[downloadbot.common.messaging.filters.Message]
+        receiver : downloadbot_common.messaging.consuming.receivers.Disposable
+        handler : downloadbot_common.messaging.consuming.handlers.Handler
+        filters : typing.Iterable[downloadbot_common.messaging.filters.Message]
             Defaults to list.
         """
 
@@ -84,7 +84,7 @@ class Blocking(Disposable):
 
         Parameters
         ----------
-        consumer : downloadbot.common.messaging.consuming.consumers.Disposable
+        consumer : downloadbot_common.messaging.consuming.consumers.Disposable
         interval : float
             Rate of work. The units are in seconds.
         """

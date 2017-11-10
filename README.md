@@ -11,8 +11,8 @@ sudo ./build.sh
 ```
 # NOTE: Remember to replace the <tag> placeholder.
 
-sudo docker push dnguyen0304/downloadbot.common-buildtime:<tag>
-sudo docker push dnguyen0304/downloadbot.common-runtime:<tag>
+sudo docker push dnguyen0304/downloadbot_common-buildtime:<tag>
+sudo docker push dnguyen0304/downloadbot_common-runtime:<tag>
 ```
 
 ## Advanced
@@ -21,11 +21,11 @@ sudo docker push dnguyen0304/downloadbot.common-runtime:<tag>
 2. Install `git`.
 3. Clone the repository.
 ```
-git clone https://github.com/dnguyen0304/downloadbot.common.git
+git clone https://github.com/dnguyen0304/downloadbot_common.git
 ```
 4. Change the working directory.
 ```
-cd downloadbot.common
+cd downloadbot_common
 ```
 5. Build the image.
 ```
@@ -35,7 +35,7 @@ sudo ./build.sh test
 ```
 # NOTE: Remember to replace the <tag> placeholder.
 
-sudo docker run dnguyen0304/downloadbot.common-runtime:<tag>
+sudo docker run dnguyen0304/downloadbot_common-runtime:<tag>
 ```
 
 ### Managing the base runtime image
@@ -48,5 +48,5 @@ sudo ./scripts/build-runtime-base.sh
 ```
 # NOTE: Remember to replace the <tag> placeholder.
 
-sudo docker push dnguyen0304/downloadbot.common-runtime-base:<tag>
+sudo docker push dnguyen0304/downloadbot_common-runtime-base:<tag>
 ```

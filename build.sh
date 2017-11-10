@@ -30,7 +30,7 @@ docker build \
     --build-arg DOMAIN=${DOMAIN} \
     --build-arg NAMESPACE=${NAMESPACE} \
     --build-arg BASE_IMAGE_VERSION=${BUILDTIME_BASE_IMAGE_VERSION} \
-    --build-arg NAMESPACE=${NAMESPACE} \
+    --build-arg PACKAGE_NAME=${PACKAGE_NAME} \
     .
 
 # Create the package.
@@ -38,7 +38,7 @@ docker run \
     --rm \
     --volume $(pwd):${REMOTE_SHARED_VOLUME} \
     ${tag} \
-    ${NAMESPACE} ${PACKAGE_NAME} ${REMOTE_SHARED_VOLUME} ${VERSION}
+    ${PACKAGE_NAME} ${REMOTE_SHARED_VOLUME} ${VERSION}
 
 # Create the container.
 RUNTIME_BASE_IMAGE_VERSION="0.1.0"

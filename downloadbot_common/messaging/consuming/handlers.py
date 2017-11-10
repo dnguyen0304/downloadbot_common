@@ -11,7 +11,7 @@ class Handler(metaclass=abc.ABCMeta):
         """
         Parameters
         ----------
-        message : downloadbot.common.messaging.messages.Message
+        message : downloadbot_common.messaging.messages.Message
 
         Returns
         -------
@@ -19,7 +19,7 @@ class Handler(metaclass=abc.ABCMeta):
 
         Raises
         ------
-        downloadbot.common.messaging.consuming.exceptions.HandleError
+        downloadbot_common.messaging.consuming.exceptions.HandleError
             If there was an error handling the message.
         """
 

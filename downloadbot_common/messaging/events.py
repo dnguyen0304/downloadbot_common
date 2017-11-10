@@ -6,8 +6,8 @@ import datetime
 import json
 import uuid
 
-from downloadbot.common import io
-from downloadbot.common import utility
+from downloadbot_common import io
+from downloadbot_common import utility
 
 
 class Event(metaclass=abc.ABCMeta):

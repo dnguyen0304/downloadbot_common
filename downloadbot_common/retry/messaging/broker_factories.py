@@ -2,7 +2,7 @@
 
 from . import subscribers
 from .. import policy
-from downloadbot.common import event
+from downloadbot_common import event
 
 
 class Logging(object):

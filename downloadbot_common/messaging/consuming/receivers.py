@@ -13,11 +13,11 @@ class Receiver(metaclass=abc.ABCMeta):
 
         Returns
         -------
-        downloadbot.common.messaging.messages.Message
+        downloadbot_common.messaging.messages.Message
 
         Raises
         ------
-        downloadbot.common.messaging.consuming.exceptions.ReceiveTimeout
+        downloadbot_common.messaging.consuming.exceptions.ReceiveTimeout
             If the operation took too long to receive the configured
             number of messages.
         """

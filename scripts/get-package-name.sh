@@ -2,4 +2,4 @@
 
 set -eu
 
-echo $(grep -Po "package_name = '\K[\w.]+" setup.py)
+echo $(grep -Po "package_name = '\K[\w_]+" setup.py)

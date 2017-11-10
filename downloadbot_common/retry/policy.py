@@ -10,8 +10,8 @@ import six
 
 from . import exceptions
 from .attempt import Attempt
-from downloadbot.common import io
-from downloadbot.common import utility
+from downloadbot_common import io
+from downloadbot_common import utility
 
 
 class Topic(utility.AutomatedEnum):

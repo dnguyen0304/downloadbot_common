@@ -3,7 +3,7 @@
 import collections
 import json
 
-from ....common import event
+from downloadbot_common import event
 
 
 class Subscriber(event.notifiables.Notifyable):

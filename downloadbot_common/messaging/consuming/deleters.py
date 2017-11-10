@@ -15,7 +15,7 @@ class Deleter(metaclass=abc.ABCMeta):
 
         Parameters
         ----------
-        message : downloadbot.common.messaging.messages.Message
+        message : downloadbot_common.messaging.messages.Message
 
         Returns
         -------
@@ -23,7 +23,7 @@ class Deleter(metaclass=abc.ABCMeta):
 
         Raises
         ------
-        downloadbot.common.messaging.consuming.exceptions.DeleteError
+        downloadbot_common.messaging.consuming.exceptions.DeleteError
         """
 
         raise NotImplementedError

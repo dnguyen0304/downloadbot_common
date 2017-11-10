@@ -10,13 +10,13 @@ from nose.tools import (assert_equal,
                         assert_true,
                         raises)
 
+import downloadbot_common
 from .. import (PolicyBuilder,
                 Topic,
                 exceptions,
                 stop_strategies,
                 wait_strategies)
 from .. import policy
-from downloadbot import common
 
 
 def test_BaseAttemptEvent_do_to_json_default_serializer():
@@ -95,8 +95,8 @@ class TestPolicy(object):
 
     def setup(self):
         self.service = MockService()
-        self.messaging_broker = common.event.messaging.Broker(
-            observable_class=common.event.notifiables.Observable)
+        self.messaging_broker = downloadbot_common.event.messaging.Broker(
+            observable_class=downloadbot_common.event.notifiables.Observable)
         self.messaging_broker.create_topic(name=Topic.ATTEMPT_STARTED.name)
         self.messaging_broker.create_topic(name=Topic.ATTEMPT_COMPLETED.name)
 
