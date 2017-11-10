@@ -8,7 +8,7 @@ NOTE: Remember to replace the <tag> placeholder where applicable.
 For projects using setup.py:
 ```
 install_requires = ['downloadbot_common==<version>']
-dependency_links = ['git+https://github.com/dnguyen0304/downloadbot_common.git@<tag>#egg=downloadbot_common-<tag>']
+dependency_links = ['git+https://github.com/dnguyen0304/downloadbot_common.git@<tag>#egg=downloadbot_common-<version>']
 
 setuptools.setup(install_requires=install_requires,
                  dependency_links=dependency_links)
