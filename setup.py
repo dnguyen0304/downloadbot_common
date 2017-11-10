@@ -23,7 +23,7 @@ if __name__ == '__main__':
                      classifiers=['Programming Language :: Python :: 3.5',
                                   'Programming Language :: Python :: 3.6'],
                      packages=setuptools.find_packages(
-                         include=[package_name + '*'],
+                         include=['downloadbot', 'downloadbot.common*'],
                          exclude=['*.tests']),
                      install_requires=install_requires,
                      test_suite='nose.collector',
