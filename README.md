@@ -2,18 +2,7 @@
 Common libraries for Pokemon Showdown web scrapers.
 
 ## Getting Started
-### Building
-```
-sudo ./build.sh
-```
-
-### Pushing
-```
-# NOTE: Remember to replace the <tag> placeholder.
-
-sudo docker push dnguyen0304/downloadbot_common-buildtime:<tag>
-sudo docker push dnguyen0304/downloadbot_common-runtime:<tag>
-```
+### Adding the library.
 
 ## Advanced
 ### Testing the library.
@@ -36,6 +25,13 @@ sudo ./build.sh test
 # NOTE: Remember to replace the <tag> placeholder.
 
 sudo docker run dnguyen0304/downloadbot_common-runtime:<tag>
+```
+7. Pushing the images.
+```
+# NOTE: Remember to replace the <tag> placeholder.
+
+sudo docker push dnguyen0304/downloadbot_common-buildtime:<tag>
+sudo docker push dnguyen0304/downloadbot_common-runtime:<tag>
 ```
 
 ### Managing the base runtime image
