@@ -1,8 +1,23 @@
 # Download Bot Common
 Common libraries for Pokemon Showdown web scrapers.
 
+NOTE: Remember to replace the <tag> placeholder where applicable.
+
 ## Getting Started
 ### Adding the library.
+For projects using setup.py:
+```
+install_requires = ['downloadbot_common==<tag>']
+dependency_links = ['git+https://github.com/dnguyen0304/downloadbot_common.git@<tag>#egg=downloadbot_common-<tag>']
+
+setuptools.setup(install_requires=install_requires,
+                 dependency_links=dependency_links)
+```
+
+For projects using requirements.txt:
+```
+git+https://github.com/dnguyen0304/downloadbot_common.git@{tag}#egg=downloadbot_common
+```
 
 ## Advanced
 ### Testing the library.
@@ -22,14 +37,10 @@ sudo ./build.sh test
 ```
 6. Run the test suite.
 ```
-# NOTE: Remember to replace the <tag> placeholder.
-
 sudo docker run dnguyen0304/downloadbot_common-runtime:<tag>
 ```
 7. Pushing the images.
 ```
-# NOTE: Remember to replace the <tag> placeholder.
-
 sudo docker push dnguyen0304/downloadbot_common-buildtime:<tag>
 sudo docker push dnguyen0304/downloadbot_common-runtime:<tag>
 ```
@@ -42,7 +53,5 @@ sudo ./scripts/build-runtime-base.sh
 ```
 3. Push the image.
 ```
-# NOTE: Remember to replace the <tag> placeholder.
-
 sudo docker push dnguyen0304/downloadbot_common-runtime-base:<tag>
 ```
