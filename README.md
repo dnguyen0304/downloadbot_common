@@ -7,7 +7,7 @@ NOTE: Remember to replace the <tag> placeholder where applicable.
 ### Adding the library.
 For projects using setup.py:
 ```
-install_requires = ['downloadbot_common==<tag>']
+install_requires = ['downloadbot_common==<version>']
 dependency_links = ['git+https://github.com/dnguyen0304/downloadbot_common.git@<tag>#egg=downloadbot_common-<tag>']
 
 setuptools.setup(install_requires=install_requires,
